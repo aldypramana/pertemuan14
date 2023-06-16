@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JQuery 01</title>
+</head>
+<body>
+    <h3> Judul Konten</h3>
+    <p></p>
+    <div id="isikontenid">isi dari konten ID</div>
+    <div class="isikontencls">isi konten CLASS</div>
+
+    <p></p>
+    <div id="idisikonten">isi dari konten ID Baru</div>
+    <div class="clsisikonten">isi konten CLASS Baru</div>
+
+    <p></p>
+    <div id="idisiskonten">isi dari konten ID Baru</div>
+    <div class="clsisiskonten">isi konten CLASS Baru</div>
+
+    <script src="jquery-3.7.0.min.js"></script>
+    <script>
+        $(function(){
+            $("#isikontenid").html("konten dengan jquery pada element ID");
+            $(".isikontencls").html("konten dengan jquery pada element CLASS");
+            $("h3").html("Latihan JQuery");
+            $("p").html("isi dari paragraph");
+
+            $("#idisikonten").html("konten dengan jquery pada element ID Baru");
+            $(".clsisikonten").html("konten dengan jquery pada element CLASS Baru");
+            $("p").html("isi dari paragraph");
+
+            $("#idisiskonten").html("Cuman Coba-coba");
+            $(".clsisiskonten").html("Cinta Ditolak Dagang Arak Masih Bukak");
+            $("p").html("isi dari paragraph");
+
+
+        });
+
+        //document.getElementById("isikontenid").innerHTML ="konten Pengganti <b>konten ID</b>"
+        //document.getElementByClassName("isikontencls")
+    </script>
+    
+</body>
+</html>
